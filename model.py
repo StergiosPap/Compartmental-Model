@@ -5,7 +5,6 @@ import plot
 import matplotlib.pyplot as plt
 import time
 from numpy.random import choice
-import routine as rt
 from person import Person
 from town import Town, House, School, Workplace, Hospital, Entertainment, Extracurricular, Transportation, Outdoors
 from progressbar import printProgressBar
@@ -394,9 +393,5 @@ class Model():
         elif (self.resultsType == "pie"):
             plot.showPieChart(np.array(self.percentagesPerDay), emergencyLevels=self.emergencyLevelsPerDay, title="Simulation Results")
         
-        
-
-    
-#model = Model(numberOfPpl=1000, startingInfectiousPercentage=5, daysOfInfection=5, daysOfSimulation=30, r0=2, modelType="SIR", resultsType="graph")
 
 
